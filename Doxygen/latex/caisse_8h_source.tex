@@ -1,0 +1,26 @@
+\hypertarget{caisse_8h_source}{}\doxysection{caisse.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}coordonnees.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <QPainter>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#ifndef CAISSE\_H}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define CAISSE\_H}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_caisse}{Caisse}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_coordonnees}{Coordonnees}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{keywordtype}{bool} EtatCaisse; }
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} type; }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_caisse_af3a031a28bef53a2b8644b144e3a9fa6}{Caisse}}(\textcolor{keywordtype}{int} x=0, \textcolor{keywordtype}{int} y=0,  \textcolor{keywordtype}{bool} Etat=\textcolor{keyword}{false},\textcolor{keywordtype}{int} m\_type=4);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_caisse_adeac7616f7ea8d840433d88ce27dc53a}{getEtat}}();}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_coordonnees}{Coordonnees}} \mbox{\hyperlink{class_caisse_ab0d50d1251a1c4b53734d8bf4dbb767b}{getPosition}}();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_caisse_ab47b5ff3a4397ed21eb530a4215475eb}{ChangementCouleur}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_caisse_a3087321fe2390ee4751d66e9205af977}{afficher\_caisse}}(QPainter *p, \textcolor{keywordtype}{int} deco);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CAISSE\_H}}
+
+\end{DoxyCode}

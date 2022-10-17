@@ -1,0 +1,43 @@
+\hypertarget{menu_8h_source}{}\doxysection{menu.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MENU\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MENU\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <mainwindow.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QFileDialog>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QKeyEvent>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}mainwindow.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}aide.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}option.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}};}
+\DoxyCodeLine{14 \}}
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     Q\_OBJECT}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_menu_a81e517b62384dc184425757e6dba87d3}{Menu}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{\string~Menu}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_menu_a4a1714e5ceb21a78a51cd4de1d7472cb}{paintEvent}}(QPaintEvent* e);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} on\_Jouer\_clicked();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} on\_Quitter\_clicked();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} on\_pushButton\_clicked();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{keyword}{private}:}
+\DoxyCodeLine{61     Ui::Menu *ui; }
+\DoxyCodeLine{62     \mbox{\hyperlink{class_main_window}{MainWindow}} mainwindow; }
+\DoxyCodeLine{63     \mbox{\hyperlink{class_aide}{Aide}} aide; }
+\DoxyCodeLine{64     \mbox{\hyperlink{class_option}{Option}} option; }
+\DoxyCodeLine{65 \};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MENU\_H}}
+
+\end{DoxyCode}

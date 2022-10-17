@@ -1,0 +1,102 @@
+\hypertarget{class_caisse}{}\doxysection{Caisse Class Reference}
+\label{class_caisse}\index{Caisse@{Caisse}}
+
+
+S\textquotesingle{}occupe des caisses dans le jeu.  
+
+
+
+
+{\ttfamily \#include $<$caisse.\+h$>$}
+
+Inheritance diagram for Caisse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_caisse}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_caisse_af3a031a28bef53a2b8644b144e3a9fa6}{Caisse}} (int x=0, int y=0, bool Etat=false, int m\+\_\+type=4)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_caisse_adeac7616f7ea8d840433d88ce27dc53a}{get\+Etat}} ()
+\item 
+\mbox{\hyperlink{class_coordonnees}{Coordonnees}} \mbox{\hyperlink{class_caisse_ab0d50d1251a1c4b53734d8bf4dbb767b}{get\+Position}} ()
+\item 
+\mbox{\Hypertarget{class_caisse_ab47b5ff3a4397ed21eb530a4215475eb}\label{class_caisse_ab47b5ff3a4397ed21eb530a4215475eb}} 
+void {\bfseries Changement\+Couleur} ()
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}état de la caisse \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_caisse_a3087321fe2390ee4751d66e9205af977}{afficher\+\_\+caisse}} (QPainter $\ast$p, int deco)
+\begin{DoxyCompactList}\small\item\em affiche les caisses sur le plateau \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\textquotesingle{}occupe des caisses dans le jeu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_caisse_af3a031a28bef53a2b8644b144e3a9fa6}\label{class_caisse_af3a031a28bef53a2b8644b144e3a9fa6}} 
+\index{Caisse@{Caisse}!Caisse@{Caisse}}
+\index{Caisse@{Caisse}!Caisse@{Caisse}}
+\doxysubsubsection{\texorpdfstring{Caisse()}{Caisse()}}
+{\footnotesize\ttfamily Caisse\+::\+Caisse (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{bool}]{Etat = {\ttfamily false},  }\item[{int}]{m\+\_\+type = {\ttfamily 4} }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: abs de la caisse \\
+\hline
+{\em y} & \+: ord de la caisse \\
+\hline
+{\em Etat} & \+: marquée ou pas \\
+\hline
+{\em m\+\_\+type} & \+: 4 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_caisse_a3087321fe2390ee4751d66e9205af977}\label{class_caisse_a3087321fe2390ee4751d66e9205af977}} 
+\index{Caisse@{Caisse}!afficher\_caisse@{afficher\_caisse}}
+\index{afficher\_caisse@{afficher\_caisse}!Caisse@{Caisse}}
+\doxysubsubsection{\texorpdfstring{afficher\_caisse()}{afficher\_caisse()}}
+{\footnotesize\ttfamily void Caisse\+::afficher\+\_\+caisse (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{p,  }\item[{int}]{deco }\end{DoxyParamCaption})}
+
+
+
+affiche les caisses sur le plateau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em deco} & skin choisi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_caisse_adeac7616f7ea8d840433d88ce27dc53a}\label{class_caisse_adeac7616f7ea8d840433d88ce27dc53a}} 
+\index{Caisse@{Caisse}!getEtat@{getEtat}}
+\index{getEtat@{getEtat}!Caisse@{Caisse}}
+\doxysubsubsection{\texorpdfstring{getEtat()}{getEtat()}}
+{\footnotesize\ttfamily bool Caisse\+::get\+Etat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+renvoie l\textquotesingle{}état de la caisse\+: marquée ou pas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_caisse_ab0d50d1251a1c4b53734d8bf4dbb767b}\label{class_caisse_ab0d50d1251a1c4b53734d8bf4dbb767b}} 
+\index{Caisse@{Caisse}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Caisse@{Caisse}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordonnees}{Coordonnees}} Caisse\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+renvoie la position de la caisse sur le plateau 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+caisse.\+h\item 
+caisse.\+cpp\end{DoxyCompactItemize}

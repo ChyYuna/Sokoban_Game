@@ -1,0 +1,293 @@
+\hypertarget{class_plateau}{}\doxysection{Plateau Class Reference}
+\label{class_plateau}\index{Plateau@{Plateau}}
+
+
+\mbox{\hyperlink{class_plateau}{Plateau}} du jeu.  
+
+
+
+
+{\ttfamily \#include $<$plateau.\+h$>$}
+
+Inheritance diagram for Plateau\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plateau}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plateau_a8d9a9ccbcce59df65472ead8671ad8ae}{Plateau}} (string file, int x=1, int y=1)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}\label{class_plateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}} 
+{\bfseries $\sim$\+Plateau} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plateau_acf236ee764b63dc7d9cd348fe215f94a}{deplacer\+Perso}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coordP, string d)
+\begin{DoxyCompactList}\small\item\em Déplace ou non le personnage sur la grille. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plateau_ac6732055ada34a7d0ac38078c2f15a79}{deplacer\+Caisse}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coordC, string d)
+\begin{DoxyCompactList}\small\item\em Déplace ou non la caisse sur la grille. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_personnage}{Personnage}} $\ast$ \mbox{\hyperlink{class_plateau_a136d5edca0073bf57f2507ccb4094fdb}{get\+Personnage}} ()
+\item 
+int \mbox{\hyperlink{class_plateau_a5bb31cf61b30029ee4529371bcd9c88d}{get\+Longueur}} ()
+\item 
+int \mbox{\hyperlink{class_plateau_a6b595fd1ae0f623aed1e82daaaa43915}{get\+Largeur}} ()
+\item 
+bool \mbox{\hyperlink{class_plateau_ac80be3e4bd8c4594395d3071ecbc61de}{existe\+Dans\+Liste\+Caisse}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coord, string d)
+\begin{DoxyCompactList}\small\item\em vérifie si pour la coordonnées donnée, il existe une caisse \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_plateau_a379731ccee85fe46ff62b76892ce4a48}{verifier\+Position}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coord, string d)
+\item 
+void \mbox{\hyperlink{class_plateau_a543b47d62faebaef0839340fce604a84}{update\+CoordonneesP}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coordP, string d)
+\begin{DoxyCompactList}\small\item\em met à jour les coordonnées du personnage \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plateau_a49b5a9a10d08f60712ab81763882bdb9}{update\+CoordonneesC}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coordC, string d)
+\begin{DoxyCompactList}\small\item\em update\+CoordonneesC \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_caisse}{Caisse}} $\ast$ \mbox{\hyperlink{class_plateau_acfba81a8db9f1b8845ba67e754649431}{get\+Caisse}} (\mbox{\hyperlink{class_coordonnees}{Coordonnees}} coord)
+\begin{DoxyCompactList}\small\item\em get\+Caisse \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plateau_a12cac302569e2c392c33dfe3f530d543}{afficher\+\_\+\+Plateau}} (QPainter $\ast$p, int perso=0, int deco=0)
+\begin{DoxyCompactList}\small\item\em afficher\+\_\+\+Plateau \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_plateau_a6bf10706236e8540e1839d9d39760fa8}{get\+Nb\+Caisse}} ()
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Caisse accesseur \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_caisse}{Caisse}} $\ast$ $>$ \mbox{\hyperlink{class_plateau_af15dcc47dcd6f49a38fd6899d3fa008e}{get\+Liste\+Caisse}} ()
+\begin{DoxyCompactList}\small\item\em get\+Liste\+Caisse \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plateau_a19943870bc20230a1a5c4e2f1f2b425a}{Niveau\+\_\+terminee}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_plateau}{Plateau}} du jeu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_plateau_a8d9a9ccbcce59df65472ead8671ad8ae}\label{class_plateau_a8d9a9ccbcce59df65472ead8671ad8ae}} 
+\index{Plateau@{Plateau}!Plateau@{Plateau}}
+\index{Plateau@{Plateau}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{Plateau()}{Plateau()}}
+{\footnotesize\ttfamily Plateau\+::\+Plateau (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{int}]{x = {\ttfamily 1},  }\item[{int}]{y = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & \+: Fichier d\textquotesingle{}importation du niveau \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plateau_a12cac302569e2c392c33dfe3f530d543}\label{class_plateau_a12cac302569e2c392c33dfe3f530d543}} 
+\index{Plateau@{Plateau}!afficher\_Plateau@{afficher\_Plateau}}
+\index{afficher\_Plateau@{afficher\_Plateau}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{afficher\_Plateau()}{afficher\_Plateau()}}
+{\footnotesize\ttfamily void Plateau\+::afficher\+\_\+\+Plateau (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{p,  }\item[{int}]{perso = {\ttfamily 0},  }\item[{int}]{deco = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+afficher\+\_\+\+Plateau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Painter \\
+\hline
+{\em perso} & skin choisi \\
+\hline
+{\em deco} & décor choisi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plateau_ac6732055ada34a7d0ac38078c2f15a79}\label{class_plateau_ac6732055ada34a7d0ac38078c2f15a79}} 
+\index{Plateau@{Plateau}!deplacerCaisse@{deplacerCaisse}}
+\index{deplacerCaisse@{deplacerCaisse}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{deplacerCaisse()}{deplacerCaisse()}}
+{\footnotesize\ttfamily bool Plateau\+::deplacer\+Caisse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coordC,  }\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+
+Déplace ou non la caisse sur la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordC} & \+: coordonnées de la caisse \\
+\hline
+{\em d} & \+: direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: possible ou pas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_acf236ee764b63dc7d9cd348fe215f94a}\label{class_plateau_acf236ee764b63dc7d9cd348fe215f94a}} 
+\index{Plateau@{Plateau}!deplacerPerso@{deplacerPerso}}
+\index{deplacerPerso@{deplacerPerso}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{deplacerPerso()}{deplacerPerso()}}
+{\footnotesize\ttfamily void Plateau\+::deplacer\+Perso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coordP,  }\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+
+Déplace ou non le personnage sur la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordP} & \+: coordonnées du perso \\
+\hline
+{\em d} & \+: direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plateau_ac80be3e4bd8c4594395d3071ecbc61de}\label{class_plateau_ac80be3e4bd8c4594395d3071ecbc61de}} 
+\index{Plateau@{Plateau}!existeDansListeCaisse@{existeDansListeCaisse}}
+\index{existeDansListeCaisse@{existeDansListeCaisse}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{existeDansListeCaisse()}{existeDansListeCaisse()}}
+{\footnotesize\ttfamily bool Plateau\+::existe\+Dans\+Liste\+Caisse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coord,  }\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+
+vérifie si pour la coordonnées donnée, il existe une caisse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & \\
+\hline
+{\em d} & direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_acfba81a8db9f1b8845ba67e754649431}\label{class_plateau_acfba81a8db9f1b8845ba67e754649431}} 
+\index{Plateau@{Plateau}!getCaisse@{getCaisse}}
+\index{getCaisse@{getCaisse}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getCaisse()}{getCaisse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_caisse}{Caisse}} $\ast$ Plateau\+::get\+Caisse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coord }\end{DoxyParamCaption})}
+
+
+
+get\+Caisse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la caisse de coordonnées coord 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_a6b595fd1ae0f623aed1e82daaaa43915}\label{class_plateau_a6b595fd1ae0f623aed1e82daaaa43915}} 
+\index{Plateau@{Plateau}!getLargeur@{getLargeur}}
+\index{getLargeur@{getLargeur}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getLargeur()}{getLargeur()}}
+{\footnotesize\ttfamily int Plateau\+::get\+Largeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+largeur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_af15dcc47dcd6f49a38fd6899d3fa008e}\label{class_plateau_af15dcc47dcd6f49a38fd6899d3fa008e}} 
+\index{Plateau@{Plateau}!getListeCaisse@{getListeCaisse}}
+\index{getListeCaisse@{getListeCaisse}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getListeCaisse()}{getListeCaisse()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_caisse}{Caisse}} $\ast$ $>$ Plateau\+::get\+Liste\+Caisse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Liste\+Caisse 
+
+\begin{DoxyReturn}{Returns}
+Liste\+Caisse 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_a5bb31cf61b30029ee4529371bcd9c88d}\label{class_plateau_a5bb31cf61b30029ee4529371bcd9c88d}} 
+\index{Plateau@{Plateau}!getLongueur@{getLongueur}}
+\index{getLongueur@{getLongueur}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getLongueur()}{getLongueur()}}
+{\footnotesize\ttfamily int Plateau\+::get\+Longueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+longueur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_a6bf10706236e8540e1839d9d39760fa8}\label{class_plateau_a6bf10706236e8540e1839d9d39760fa8}} 
+\index{Plateau@{Plateau}!getNbCaisse@{getNbCaisse}}
+\index{getNbCaisse@{getNbCaisse}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getNbCaisse()}{getNbCaisse()}}
+{\footnotesize\ttfamily int Plateau\+::get\+Nb\+Caisse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Nb\+Caisse accesseur 
+
+\begin{DoxyReturn}{Returns}
+nombre de caisses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_a136d5edca0073bf57f2507ccb4094fdb}\label{class_plateau_a136d5edca0073bf57f2507ccb4094fdb}} 
+\index{Plateau@{Plateau}!getPersonnage@{getPersonnage}}
+\index{getPersonnage@{getPersonnage}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getPersonnage()}{getPersonnage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_personnage}{Personnage}} $\ast$ Plateau\+::get\+Personnage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}instance \mbox{\hyperlink{class_personnage}{Personnage}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_a19943870bc20230a1a5c4e2f1f2b425a}\label{class_plateau_a19943870bc20230a1a5c4e2f1f2b425a}} 
+\index{Plateau@{Plateau}!Niveau\_terminee@{Niveau\_terminee}}
+\index{Niveau\_terminee@{Niveau\_terminee}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{Niveau\_terminee()}{Niveau\_terminee()}}
+{\footnotesize\ttfamily bool Plateau\+::\+Niveau\+\_\+terminee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+True / False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plateau_a49b5a9a10d08f60712ab81763882bdb9}\label{class_plateau_a49b5a9a10d08f60712ab81763882bdb9}} 
+\index{Plateau@{Plateau}!updateCoordonneesC@{updateCoordonneesC}}
+\index{updateCoordonneesC@{updateCoordonneesC}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{updateCoordonneesC()}{updateCoordonneesC()}}
+{\footnotesize\ttfamily void Plateau\+::update\+CoordonneesC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coordC,  }\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+
+update\+CoordonneesC 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordP} & coordonnées caisse \\
+\hline
+{\em d} & direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plateau_a543b47d62faebaef0839340fce604a84}\label{class_plateau_a543b47d62faebaef0839340fce604a84}} 
+\index{Plateau@{Plateau}!updateCoordonneesP@{updateCoordonneesP}}
+\index{updateCoordonneesP@{updateCoordonneesP}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{updateCoordonneesP()}{updateCoordonneesP()}}
+{\footnotesize\ttfamily void Plateau\+::update\+CoordonneesP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coordP,  }\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+
+met à jour les coordonnées du personnage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordP} & \\
+\hline
+{\em d} & direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plateau_a379731ccee85fe46ff62b76892ce4a48}\label{class_plateau_a379731ccee85fe46ff62b76892ce4a48}} 
+\index{Plateau@{Plateau}!verifierPosition@{verifierPosition}}
+\index{verifierPosition@{verifierPosition}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{verifierPosition()}{verifierPosition()}}
+{\footnotesize\ttfamily int Plateau\+::verifier\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordonnees}{Coordonnees}}}]{coord,  }\item[{string}]{d }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & \\
+\hline
+{\em d} & direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_case___mur}{Case\+\_\+\+Mur}} ou \mbox{\hyperlink{class_case___vide}{Case\+\_\+\+Vide}} ou Case\+\_\+\+Marquée ou \mbox{\hyperlink{class_caisse}{Caisse}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+plateau.\+h\item 
+plateau.\+cpp\end{DoxyCompactItemize}

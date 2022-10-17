@@ -1,0 +1,172 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Gère le jeu et l\textquotesingle{}IHM.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+{\bfseries $\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a7d17315ad42e624c7960b0c93fe4f0b9}{paint\+Event}} (QPaint\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em affiche les éléments graphiques \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9c4f542263838b9ecd06eae839a42a34}{key\+Press\+Event}} (QKey\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Gere les déplacements par le clavier dans le jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a0505a162623547ba42a1e0e49cd118e8}{gestion\+Plateau}} (int niveau)
+\begin{DoxyCompactList}\small\item\em gère les différents niveaux \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a96257e6d683bce923692749b08df3908}{set\+Niveau}} (int niv)
+\begin{DoxyCompactList}\small\item\em change le niveau actuel \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_main_window_a9d7b43b34949bf6f583f9605677d4e1f}{get\+Niveau}} ()
+\begin{DoxyCompactList}\small\item\em renvoie le niveau actuel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9eba7aae8c22809421ee225916975e4a}{set\+Deco}} (int val)
+\begin{DoxyCompactList}\small\item\em set\+Deco \+: modifie la déco du jeu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a0272da7bcfc73602ad1a5133d79a99b8}{set\+Perso}} (int val)
+\begin{DoxyCompactList}\small\item\em set\+Perso \+: modifie le skin du perso \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gère le jeu et l\textquotesingle{}IHM. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a0505a162623547ba42a1e0e49cd118e8}\label{class_main_window_a0505a162623547ba42a1e0e49cd118e8}} 
+\index{MainWindow@{MainWindow}!gestionPlateau@{gestionPlateau}}
+\index{gestionPlateau@{gestionPlateau}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{gestionPlateau()}{gestionPlateau()}}
+{\footnotesize\ttfamily void Main\+Window\+::gestion\+Plateau (\begin{DoxyParamCaption}\item[{int}]{niveau }\end{DoxyParamCaption})}
+
+
+
+gère les différents niveaux 
+
+
+\begin{DoxyParams}{Parameters}
+{\em niveau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a9d7b43b34949bf6f583f9605677d4e1f}\label{class_main_window_a9d7b43b34949bf6f583f9605677d4e1f}} 
+\index{MainWindow@{MainWindow}!getNiveau@{getNiveau}}
+\index{getNiveau@{getNiveau}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getNiveau()}{getNiveau()}}
+{\footnotesize\ttfamily int Main\+Window\+::get\+Niveau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+renvoie le niveau actuel 
+
+\begin{DoxyReturn}{Returns}
+niveau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_main_window_a9c4f542263838b9ecd06eae839a42a34}\label{class_main_window_a9c4f542263838b9ecd06eae839a42a34}} 
+\index{MainWindow@{MainWindow}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Gere les déplacements par le clavier dans le jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a7d17315ad42e624c7960b0c93fe4f0b9}\label{class_main_window_a7d17315ad42e624c7960b0c93fe4f0b9}} 
+\index{MainWindow@{MainWindow}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+affiche les éléments graphiques 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a9eba7aae8c22809421ee225916975e4a}\label{class_main_window_a9eba7aae8c22809421ee225916975e4a}} 
+\index{MainWindow@{MainWindow}!setDeco@{setDeco}}
+\index{setDeco@{setDeco}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setDeco()}{setDeco()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Deco (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+set\+Deco \+: modifie la déco du jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \+: skin choisi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a96257e6d683bce923692749b08df3908}\label{class_main_window_a96257e6d683bce923692749b08df3908}} 
+\index{MainWindow@{MainWindow}!setNiveau@{setNiveau}}
+\index{setNiveau@{setNiveau}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setNiveau()}{setNiveau()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Niveau (\begin{DoxyParamCaption}\item[{int}]{niv }\end{DoxyParamCaption})}
+
+
+
+change le niveau actuel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em niv} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a0272da7bcfc73602ad1a5133d79a99b8}\label{class_main_window_a0272da7bcfc73602ad1a5133d79a99b8}} 
+\index{MainWindow@{MainWindow}!setPerso@{setPerso}}
+\index{setPerso@{setPerso}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setPerso()}{setPerso()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Perso (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+set\+Perso \+: modifie le skin du perso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \+: skin choisi \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
